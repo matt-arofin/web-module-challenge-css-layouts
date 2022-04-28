@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -17,13 +17,68 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+}*/
 
 * {
     background: #25283d;
     color: #98dfea;
 }
 
-.button {
+header {
+    display: flex;
+}
 
+section {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    justify-content: flex-start;
+}
+
+nav {
+    justify-items: space-evenly;
+}
+
+div, section, header, footer {
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 10vw;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.img-landing {
+    height: auto;
+    width: 60vw;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.image-container img {
+    height: 30vh;
+    width: 20vw;
+    margin: 5vw;
 }
