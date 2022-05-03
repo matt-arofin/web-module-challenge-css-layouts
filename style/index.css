@@ -1,4 +1,4 @@
-/*html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -13,43 +13,77 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}*/
+}
 
 * {
     background: #25283d;
     color: #98dfea;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    border: 1px solid white;
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, i {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 7.5rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+p, a {
+    font-size: 3rem;
 }
 
 header {
     display: flex;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-}
-
-h2 {
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 nav {
-    justify-items: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-div, section, header, footer {
-    border: 3px solid white;
+/* div, section, header, footer {
     display: flex;
     justify-content: center;
+} */
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .button {
     background-color: #1c87c9;
-    border: none;
+    border: 1px solid wheat;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -57,13 +91,14 @@ div, section, header, footer {
     font-size: 20px;
     width: 10vw;
     cursor: pointer;
-    border-radius: 25%;
+    border-radius: 5%;
 }
 
 .landing {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
 }
 
 .img-landing {
