@@ -21,11 +21,12 @@ time, mark, audio, video {
 
 * {
     background: #25283d;
+    font-family:Arial, Helvetica, sans-serif;
     color: #98dfea;
     max-width: 100%;
     max-height: 100%;
     box-sizing: border-box;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-size: 62.5%;
 }
 
@@ -39,6 +40,8 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    position: absolute;
+    background: none;
 }
 
 h2 {
@@ -64,11 +67,6 @@ nav {
     align-items: center;
     width: 50vw;
 }
-
-/* div, section, header, footer {
-    display: flex;
-    justify-content: center;
-} */
 
 section {
     display: flex;
@@ -98,8 +96,7 @@ footer {
 .landing {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
 }
 
 .img-landing {
